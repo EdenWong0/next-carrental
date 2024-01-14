@@ -14,7 +14,7 @@ export default function Header() {
   const [nav, setNav] = useState(false);
 
   const desktopMode = useMediaQuery({
-    query: '(min-width: 1300px)',
+    query: '(min-width: 1100px)',
   });
 
   useEffect(() => {
@@ -43,9 +43,9 @@ export default function Header() {
   return (
     <header className={`${header ? 'bg-white shadow-md py-2' : 'bg-transparent shadow-one py-4'} fixed w-full max-w-[1920px] mx-auto z-20 transition-all duration-300`}>
      <div className='xl:px-20 mx-auto flex flex-col xl:flex-row xl:items-center xl:justify-between'>
-      <div className='flex justify-between items-center px-4'>
+      <div className='flex justify-between items-center px-6'>
         <Link to='home' smooth={desktopMode} spy={true} className='cursor-pointer'>
-          <Image src={'/icons/logo.svg'} width={194} height={64} alt='logo' />
+          <Image src={'/logo.png'} width={104} height={34} alt='logo' />
         </Link>
         <div 
           onClick={() => setNav(!nav)}
@@ -58,7 +58,7 @@ export default function Header() {
         )}
         </div>
       </div>
-      <nav className={`${nav ? 'max-h-max py-8 px-4 xl:py-0 xl:px-0 items-center justify-center' : 'max-h-0 xl:max-h-max'} flex flex-col w-full bg-white gap-y-6 overflow-hidden font-bold xl:font-medium xl:flex-row xl:w-max xl:gap-x-6 xl:h-max xl:bg-transparent xl:pb-0 transition-all duration-300 text-center xl:text-left uppercase text-sm xl:text-[15px] xl:uppercase xl:px-24`}>
+      <nav className={`${nav ? 'max-h-max py-8 px-4 xl:py-0 xl:px-0 items-center justify-center' : 'max-h-0 xl:max-h-max'} flex flex-col w-full bg-white gap-y-6 overflow-hidden font-bold xl:font-medium xl:flex-row xl:w-max xl:gap-x-6 xl:h-max xl:bg-transparent xl:pb-0 transition-all duration-300 text-center xl:text-left uppercase text-sm xl:text-[20px] xl:uppercase xl:px-24`}>
         <Link className='cursor-pointer' to='home' activeClass="active" smooth={desktopMode} spy={true} >
           Home
         </Link>

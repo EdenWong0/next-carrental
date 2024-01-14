@@ -30,7 +30,7 @@
     @apply text-secondary;
   }
   .h1 {
-    @apply text-4xl xl:text-[64px] text-primary xl:leading-[72px] font-extrabold mb-[18px];
+    @apply text-4xl xl:text-[48px] text-primary xl:leading-[72px] font-extrabold mb-[18px];
   }
   .h2 {
     @apply text-4xl mb-6 font-bold;
