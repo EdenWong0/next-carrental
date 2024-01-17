@@ -42,11 +42,12 @@ export default function Header() {
   
   return (
     <header className={`${header ? 'bg-white shadow-md py-2' : 'bg-transparent shadow-one py-4'} fixed w-full max-w-[1920px] mx-auto z-20 transition-all duration-300`}>
-     <div className='xl:px-20 mx-auto flex flex-col xl:flex-row xl:items-center xl:justify-between'>
+     <div className='xl:container mx-auto flex flex-col xl:flex-row xl:items-center xl:justify-between'>
       <div className='flex justify-between items-center px-6'>
         <Link to='home' smooth={desktopMode} spy={true} className='cursor-pointer'>
-          <Image src={'/logo.png'} width={104} height={34} alt='logo' />
+          <Image src={'/logo.png'} width={74} height={24} alt='logo' />
         </Link>
+        <h3 className='text-accent font-bold text-xl py-2'><span className='text-red-500'>TheNorth</span>CarHub</h3>
         <div 
           onClick={() => setNav(!nav)}
           className='cursor-pointer xl:hidden'
@@ -58,7 +59,7 @@ export default function Header() {
         )}
         </div>
       </div>
-      <nav className={`${nav ? 'max-h-max py-8 px-4 xl:py-0 xl:px-0 items-center justify-center' : 'max-h-0 xl:max-h-max'} flex flex-col w-full bg-white gap-y-6 overflow-hidden font-bold xl:font-medium xl:flex-row xl:w-max xl:gap-x-6 xl:h-max xl:bg-transparent xl:pb-0 transition-all duration-300 text-center xl:text-left uppercase text-sm xl:text-[20px] xl:uppercase xl:px-24`}>
+      <nav className={`${nav ? 'max-h-max py-8 px-4 xl:py-0 xl:px-0 items-center justify-center' : 'max-h-0 xl:max-h-max'} flex flex-col w-full bg-white gap-y-6 overflow-hidden font-bold xl:font-medium xl:flex-row xl:w-max xl:gap-x-6 xl:h-max xl:bg-transparent xl:pb-0 transition-all duration-300 text-center xl:text-left uppercase text-sm xl:text-[16px] xl:uppercase xl:px-24`}>
         <Link className='cursor-pointer' to='home' activeClass="active" smooth={desktopMode} spy={true} >
           Home
         </Link>

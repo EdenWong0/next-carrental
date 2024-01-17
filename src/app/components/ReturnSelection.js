@@ -54,7 +54,7 @@ export default function ReturnSelection() {
                 {({ active }) => (
                   <div
                     className={`${
-                      active ? 'bg-gray-100 cursor-pointer py-4 xl:pl-10 hover:bg-slate-500 text-[13px] uppercase' : ''
+                      active ? 'bg-gray-100 cursor-pointer py-4 xl:pl-10 hover:bg-cyan-700 text-white text-[13px] uppercase' : ''
                     } menu-item`}
                     onClick={() => setLocation(city)}
                   >
