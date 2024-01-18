@@ -3,76 +3,17 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import Image from 'next/image';
 import { FaStar } from 'react-icons/fa';
-import { TbEngine, TbManualGearbox  } from "react-icons/tb";
-import { FaGasPump } from "react-icons/fa";
-import { GiCarSeat, GiCarWheel  } from "react-icons/gi";
+import { Pagination } from 'swiper/modules';
+
 
 
 const cars =[
   {
-    type: 'Hatchback',
-    name: 'Ford Focus',
-    price: 29,
-    stars: 3.5,
-    image: 'images/carSlider/car01.svg',
-    info: [
-      {
-        icon: 'icons/carSlider/gearshift.svg',
-        text: 'Manual',
-      },
-      {
-        icon: 'icons/carSlider/seat.svg',
-        text: '5 Seats',
-      },
-      {
-        icon: 'icons/carSlider/gas.svg',
-        text: 'Gas',
-      },
-      {
-        icon: 'icons/carSlider/engine.svg',
-        text: '1600 HP',
-      },
-      {
-        icon: 'icons/carSlider/wheel.svg',
-        text: 'Front Wheel',
-      },
-    ],
-  },
-  {
     type: 'Sedan',
-    name: 'Toyota Corolla',
-    price: 25,
+    name: 'Mercedes-Benz',
+    price: 40,
     stars: 5,
-    image: 'images/carSlider/car02.svg',
-    info: [
-      {
-        icon: 'icons/carSlider/gearshift.svg',
-        text: 'Manual',
-      },
-      {
-        icon: 'icons/carSlider/seat.svg',
-        text: '5 Seats',
-      },
-      {
-        icon: 'icons/carSlider/gas.svg',
-        text: 'Gas',
-      },
-      {
-        icon: 'icons/carSlider/engine.svg',
-        text: '1600 HP',
-      },
-      {
-        icon: 'icons/carSlider/wheel.svg',
-        text: 'Front Wheel',
-      },
-    ],
-  },
-  {
-    type: 'SUV',
-    name: 'Honda CR-V',
-    price: 35,
-    stars: 4.5,
-    image: 'images/carSlider/car03.svg',
+    image: '/images/carSlider/car04.png',
     info: [
       {
         icon: 'icons/carSlider/gearshift.svg',
@@ -88,20 +29,49 @@ const cars =[
       },
       {
         icon: 'icons/carSlider/engine.svg',
-        text: '1600 HP',
+        text: '3.0 L V6',
       },
       {
         icon: 'icons/carSlider/wheel.svg',
-        text: 'Front Wheel',
+        text: 'AWD',
       },
     ],
   },
   {
-    type: 'Convertible',
-    name: 'Mazda MX-5',
-    price: 32,
-    stars: 4.6,
-    image: 'images/carSlider/car01.svg',
+    type: 'SUV',
+    name: 'Honda CR-V',
+    price: 36,
+    stars: 5,
+    image: '/images/carSlider/car02.jpeg',
+    info: [
+      {
+        icon: 'icons/carSlider/gearshift.svg',
+        text: 'Automatic',
+      },
+      {
+        icon: 'icons/carSlider/seat.svg',
+        text: '7 Seats',
+      },
+      {
+        icon: 'icons/carSlider/gas.svg',
+        text: 'Gas',
+      },
+      {
+        icon: 'icons/carSlider/engine.svg',
+        text: 'I-4 2.0L',
+      },
+      {
+        icon: 'icons/carSlider/wheel.svg',
+        text: 'AWD',
+      },
+    ],
+  },
+  {
+    type: 'Sedan',
+    name: 'Honda Civic Type-R',
+    price: 29,
+    stars: 5,
+    image: '/images/carSlider/car03.jpeg',
     info: [
       {
         icon: 'icons/carSlider/gearshift.svg',
@@ -109,7 +79,7 @@ const cars =[
       },
       {
         icon: 'icons/carSlider/seat.svg',
-        text: '2 Seats',
+        text: '5 Seats',
       },
       {
         icon: 'icons/carSlider/gas.svg',
@@ -121,7 +91,36 @@ const cars =[
       },
       {
         icon: 'icons/carSlider/wheel.svg',
-        text: 'Front Wheel',
+        text: 'FWD',
+      },
+    ],
+  },
+  {
+    type: 'SUV',
+    name: 'Tesla Model X',
+    price: 55,
+    stars: 5,
+    image: '/images/carSlider/car01.png',
+    info: [
+      {
+        icon: 'icons/carSlider/gearshift.svg',
+        text: 'Automatic',
+      },
+      {
+        icon: 'icons/carSlider/seat.svg',
+        text: '5 Seats',
+      },
+      {
+        icon: 'icons/carSlider/gas.svg',
+        text: 'EV',
+      },
+      {
+        icon: 'icons/carSlider/engine.svg',
+        text: 'Electric',
+      },
+      {
+        icon: 'icons/carSlider/wheel.svg',
+        text: 'AWD',
       },
     ],
   },
@@ -138,6 +137,12 @@ export default function CarSlider() {
           640: { slidesPerView: 2, spaceBetween: 32},
           768: { slidesPerView: 3, spaceBetween: 32},
         }}
+        pagination={{
+          clickable: true,
+          dynamicBullets: true,
+        }}
+        modules={[Pagination]}
+        className='text-xl h-[450px] xl:h-[620px]'
       >
         {cars.map((car, index) => {
           return (

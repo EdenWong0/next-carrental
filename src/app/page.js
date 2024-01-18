@@ -4,9 +4,9 @@ import Cars from "./components/Cars";
 import About from "./components/About";
 import WhyUs from "./components/WhyUs";
 import Reviews from "./components/Reviews";
-import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import BackToTopBtn from "./components/BackToTopBtn";
+
 
 export default function Home() {
   return (
@@ -17,11 +17,10 @@ export default function Home() {
       <About />
       <WhyUs />
       <Reviews />
-      <Contact />
       <Footer />
       <BackToTopBtn />
-      <div className="h-[4000px]">
-      </div>
+      {/*<div className="h-[800px]">
+      </div>*/}
     </main>
   )
 }

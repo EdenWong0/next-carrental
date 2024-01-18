@@ -17,7 +17,7 @@ const About = () => {
       <div className='container mx-auto'>
         <div className='flex flex-col xl:flex-row xl:justify-between'>
           <div className='flex-1 mb-8 xl:mb-0'>
-            <Image className='rounded-[20px]' src={'/images/about/car01.png'} width={600} height={600} />
+            <Image className='rounded-[20px]' src={'/images/about/bmw.jpg'} width={600} height={900} />
           </div>
           <div className='flex-1 flex items-center xl:justify-center'>
             <div className='xl:max-w-[517px]'>
