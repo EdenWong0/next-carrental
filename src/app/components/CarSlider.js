@@ -124,6 +124,93 @@ const cars =[
       },
     ],
   },
+  {
+    type: 'Subcompact',
+    name: 'Audi TT',
+    price: 47,
+    stars: 5,
+    image: '/images/carSlider/car05.png',
+    info: [
+      {
+        icon: 'icons/carSlider/gearshift.svg',
+        text: 'Manual',
+      },
+      {
+        icon: 'icons/carSlider/seat.svg',
+        text: '2 Seats',
+      },
+      {
+        icon: 'icons/carSlider/gas.svg',
+        text: 'Gas',
+      },
+      {
+        icon: 'icons/carSlider/engine.svg',
+        text: '2.0 L/121',
+      },
+      {
+        icon: 'icons/carSlider/wheel.svg',
+        text: 'AWD',
+      },
+    ],
+  },
+  {
+    type: 'SUV',
+    name: 'Volvo XC60 Plus',
+    price: 25,
+    stars: 5,
+    image: '/images/carSlider/car06.jpeg',
+    info: [
+      {
+        icon: 'icons/carSlider/gearshift.svg',
+        text: 'Automatic',
+      },
+      {
+        icon: 'icons/carSlider/seat.svg',
+        text: '5 Seats',
+      },
+      {
+        icon: 'icons/carSlider/gas.svg',
+        text: 'Gas',
+      },
+      {
+        icon: 'icons/carSlider/engine.svg',
+        text: 'P4 MP 2.0L',
+      },
+      {
+        icon: 'icons/carSlider/wheel.svg',
+        text: 'AWD',
+      },
+    ],
+  },
+  {
+    type: 'SUV',
+    name: 'Mazda CX50 GT',
+    price: 33,
+    stars: 5,
+    image: '/images/carSlider/car07.jpeg',
+    info: [
+      {
+        icon: 'icons/carSlider/gearshift.svg',
+        text: 'Automatic',
+      },
+      {
+        icon: 'icons/carSlider/seat.svg',
+        text: '5 Seats',
+      },
+      {
+        icon: 'icons/carSlider/gas.svg',
+        text: 'Gas',
+      },
+      {
+        icon: 'icons/carSlider/engine.svg',
+        text: 'Skyactiv-G 2.5 T',
+      },
+      {
+        icon: 'icons/carSlider/wheel.svg',
+        text: 'AWD',
+      },
+    ],
+  },
 ];
 
 export default function CarSlider() {
