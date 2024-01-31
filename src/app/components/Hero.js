@@ -13,7 +13,6 @@ export default function Hero() {
     words: [
     "Unbeatable Prices",
     "Luxury and Economy Cars for Rent",
-    "Reliable",
     "Book Now for Special Deals",
     "Your Journey Starts Here",
     ],
@@ -61,7 +60,7 @@ export default function Hero() {
       </div>
       {searchActive ? (
         <motion.div 
-          className='fixed top-[80px] z-10 w-full max-w-[1920px]'
+          className='fixed top-[80px] z-10 w-full'
         >
           <Search />
         </motion.div>
@@ -70,7 +69,7 @@ export default function Hero() {
           initial={{ x: "100%", opacity: 0 }}
           animate={{ x: 0, opacity: 2 }}
           transition={{ duration: 1.5, delay: 0.5 }}
-          className='-mt-12 w-full max-w-[1300px] mx-auto'
+          className='-mt-16 w-full max-w-[1300px] mx-auto'
         >
           <Search />
         </motion.div>

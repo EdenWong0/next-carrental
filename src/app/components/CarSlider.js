@@ -9,35 +9,6 @@ import { Pagination } from 'swiper/modules';
 
 const cars =[
   {
-    type: 'Sedan',
-    name: 'Mercedes-Benz',
-    price: 40,
-    stars: 5,
-    image: '/images/carSlider/car04.png',
-    info: [
-      {
-        icon: 'icons/carSlider/gearshift.svg',
-        text: 'Automatic',
-      },
-      {
-        icon: 'icons/carSlider/seat.svg',
-        text: '5 Seats',
-      },
-      {
-        icon: 'icons/carSlider/gas.svg',
-        text: 'Gas',
-      },
-      {
-        icon: 'icons/carSlider/engine.svg',
-        text: '3.0 L V6',
-      },
-      {
-        icon: 'icons/carSlider/wheel.svg',
-        text: 'AWD',
-      },
-    ],
-  },
-  {
     type: 'SUV',
     name: 'Honda CR-V',
     price: 36,
