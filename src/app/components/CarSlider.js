@@ -39,7 +39,7 @@ const cars =[
   },
   {
     type: 'Sedan',
-    name: 'Honda Civic Type-R',
+    name: 'Honda Civic',
     price: 29,
     stars: 5,
     image: '/images/carSlider/car03.jpeg',
@@ -126,7 +126,7 @@ const cars =[
   },
   {
     type: 'SUV',
-    name: 'Volvo XC60 Plus',
+    name: 'Volvo XC60',
     price: 25,
     stars: 5,
     image: '/images/carSlider/car06.jpeg',
@@ -153,35 +153,6 @@ const cars =[
       },
     ],
   },
-  {
-    type: 'SUV',
-    name: 'Mazda CX50 GT',
-    price: 33,
-    stars: 5,
-    image: '/images/carSlider/car07.jpeg',
-    info: [
-      {
-        icon: 'icons/carSlider/gearshift.svg',
-        text: 'Automatic',
-      },
-      {
-        icon: 'icons/carSlider/seat.svg',
-        text: '5 Seats',
-      },
-      {
-        icon: 'icons/carSlider/gas.svg',
-        text: 'Gas',
-      },
-      {
-        icon: 'icons/carSlider/engine.svg',
-        text: 'Skyactiv-G 2.5 T',
-      },
-      {
-        icon: 'icons/carSlider/wheel.svg',
-        text: 'AWD',
-      },
-    ],
-  },
 ];
 
 export default function CarSlider() {
@@ -189,24 +160,31 @@ export default function CarSlider() {
     <div 
       className='container mx-auto'
     >
-      <Swiper 
+      <Swiper
+        spaceBetween={20}
         breakpoints={{
-          320: { slidesPerView: 1, spaceBetween: 15}, 
-          640: { slidesPerView: 2, spaceBetween: 32},
-          768: { slidesPerView: 3, spaceBetween: 32},
+          0: {
+            slidesPerView: 1, 
+          },
+          640: {
+            slidesPerView: 1, 
+          },
+          768: {
+            slidesPerView: 2, 
+          },
+          1024: {
+            slidesPerView: 3,
+          },
+          1300: {
+            slidesPerView: 3, 
+          },
         }}
-        pagination={{
-          clickable: true,
-          dynamicBullets: true,
-        }}
-        modules={[Pagination]}
-        className='text-xl h-[450px] xl:h-[620px]'
       >
         {cars.map((car, index) => {
           return (
             <SwiperSlide key={index}>
-              <div className='max-w-[350px] mx-auto sm:mx-0 rounded-lg bg-white hover:bg-slate-300'>
-                <Image src={car.image} width={380} height={280} alt=''/>
+              <div className='max-w-[350px] mx-auto my-10 rounded-lg bg-white hover:bg-slate-300'>
+                <Image src={car.image} width={380} height={280} alt='' className="w-full h-auto"/>
                 <div className='flex justify-between'>
                   <div>
                     <div className='text-[13px] text-secondary uppercase'>{car.type}</div>
@@ -221,7 +199,7 @@ export default function CarSlider() {
                     <FaStar />
                   </div>
                 </div>
-                <div className='flex gap-x-3 xl:gap-x-4 w-max mb-10'>
+                <div className='flex flex-wrap justify-center gap-x-3 xl:gap-x-4 mb-10'>
                   {car.info.map((item, index) => {
                     return (
                       <div key={index} className='flex flex-col items-center'>

@@ -19,8 +19,8 @@ const About = () => {
           <div className='flex-1 mb-8 xl:mb-0'>
             <Image className='rounded-[20px]' src={'/images/about/bmw.jpg'} width={600} height={900} />
           </div>
-          <div className='flex-1 flex items-center xl:justify-center'>
-            <div className='xl:max-w-[517px]'>
+          <div className='flex-1 flex items-center xl:justify-center px-2'>
+            <div className='w-full max-w-[517px]'>
               <h2 className='h2'>
                 Embark on a Distinctive Journey with <span className='text-red-500'>TheNorth</span><span className='text-accent'>CarHub</span>
               </h2>

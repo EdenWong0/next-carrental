@@ -8,7 +8,7 @@ export default function Footer() {
   return (
     <footer className='pt-20 bg-white z-20'>
       <div className='container mx-auto mb-24'>
-        <div className='flex flex-col lg:flex-row lg:justify-between gap-x-5 gap-y-14'>
+        <div className='flex flex-col lg:flex-row lg:justify-between gap-x-2 gap-y-5'>
           <div className='flex flex-col flex-1 lg:justify-between gap-y-2 gap-x-5'>
             <Link to={'home'} smooth={true} spy={true} className='cursor-pointer'>
               <Image src={'/logo.png'} width={100} height={50} alt=''/>
@@ -17,32 +17,32 @@ export default function Footer() {
             <div className='flex flex-col gap-y-4 font-semibold text-secondary'>
               <div className='flex items-center gap-x-1'>
                 <FaPhone />
-                <div>+1(437)981-9888</div>
+                <div className='hover:text-accent transition-colors cursor-pointer'>+1(437)981-9888</div>
               </div>
               <div className='flex items-center gap-x-1'>
                 <FaFax />
-                <div>+1(437)981-9777</div>
+                <div className='hover:text-accent transition-colors cursor-pointer'>+1(437)981-9777</div>
               </div>
               <div className='flex items-center gap-x-1'>
                 <FaEnvelope />
-                <div>contact@thenorthcarhub.ca</div>
+                <div className='hover:text-accent transition-colors cursor-pointer'>contact@thenorthcarhub.ca</div>
               </div>
             </div>
-            <div className='flex flex-row text-accent text-4xl gap-x-4 items-center'>
-              <FaSquareFacebook />
-              <FaInstagram />
-              <FaXTwitter />
+            <div className='flex flex-row text-accent mt-2 text-4xl gap-x-4 items-center cursor-pointer'>
+              <FaSquareFacebook size={25}/>
+              <FaInstagram size={25}/>
+              <FaXTwitter size={25}/>
             </div>
           </div>
           <div className='flex-1 flex flex-col xl:items-center'>
             <div>
               <h3 className='h3 font-bold mb-8 text-accent uppercase'>Company</h3>
               <ul className='flex flex-col gap-y-4 font-semibold text-secondary'>
-                <li><a href=''>About <span className='text-red-500'>TheNorth</span><span className='text-accent'>CarHub</span></a></li>
-                <li><a href=''>News & Stories</a></li>
-                <li><a href=''>Social Responsibility</a></li>
-                <li><a href=''>Careers Opportunities</a></li>
-                <li><a href=''>Sitemap</a></li>
+                <li><a href='' className='hover:text-accent transition-colors'>About <span className='text-red-500'>TheNorth</span><span className='text-accent'>CarHub</span></a></li>
+                <li><a href='' className='hover:text-accent transition-colors'>News & Stories</a></li>
+                <li><a href='' className='hover:text-accent transition-colors'>Social Responsibility</a></li>
+                <li><a href='' className='hover:text-accent transition-colors'>Careers Opportunities</a></li>
+                <li><a href='' className='hover:text-accent transition-colors'>Sitemap</a></li>
               </ul>
             </div>
           </div>
@@ -66,9 +66,9 @@ export default function Footer() {
           <div className='flex-1'>
             <h3 className='h3 font-bold mb-8 text-accent uppercase'>Special</h3>
             <ul className='flex flex-col gap-y-4 font-semibold text-secondary'>
-                <li><a href=''>All Specials</a></li>
-                <li><a href=''>Last Specials</a></li>
-                <li><a href=''>Email Sign-Up</a></li>
+                <li><a href='' className='hover:text-accent transition-colors' >All Specials</a></li>
+                <li><a href='' className='hover:text-accent transition-colors' >Last Specials</a></li>
+                <li><a href='' className='hover:text-accent transition-colors' >Email Sign-Up</a></li>
               </ul>
           </div>
         </div>

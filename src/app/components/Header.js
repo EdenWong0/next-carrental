@@ -59,7 +59,7 @@ export default function Header() {
         )}
         </div>
       </div>
-      <nav className={`${nav ? 'max-h-max py-8 px-4 xl:py-0 xl:px-0 items-center justify-center' : 'max-h-0 xl:max-h-max'} flex flex-col w-full bg-white gap-y-6 overflow-hidden font-bold xl:font-bold xl:flex-row xl:w-max xl:gap-x-6 xl:h-max xl:bg-transparent xl:pb-0 transition-all duration-300 text-center xl:text-left uppercase text-sm xl:text-[16px] xl:uppercase xl:px-24`}>
+      <nav className={`${nav ? 'max-h-max py-8 px-4 mt-10 xl:py-0 xl:px-0 items-center justify-center' : 'max-h-0 xl:max-h-max'} flex flex-col w-full bg-white gap-y-6 mt-10 overflow-hidden font-bold xl:font-bold xl:flex-row xl:w-max xl:gap-x-6 xl:h-max xl:bg-transparent xl:pb-0 transition-all duration-300 text-center xl:text-left uppercase text-sm xl:text-[16px] xl:uppercase xl:px-24`}>
         <Link className='cursor-pointer' to='home' activeClass="active" smooth={desktopMode} spy={true} >
           Home
         </Link>

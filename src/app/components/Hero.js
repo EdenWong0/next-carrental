@@ -23,7 +23,7 @@ export default function Hero() {
   });
 
   return (
-    <section className='h-screen xl:h-[90vh] bg-[#b2b7c2]/10' id='home'>
+    <section className='h-[60vh] xl:h-[90vh] bg-[#b2b7c2]/10' id='home'>
       <div className='container mx-auto h-full xl:pt-10'>
         <div className='flex flex-col xl:flex-row justify-center items-center xl:justify-start h-full'>
           <motion.div 
@@ -52,7 +52,7 @@ export default function Hero() {
             initial={{ y: "100%", opacity: 0 }}
             animate={{ y: 0, opacity: 2 }}
             transition={{ duration: 1.5, delay: 0.5 }}
-            className='relative w-full h-full max-w-[50vh] md:max-w-[70vw] xl:max-w-[860px] xl:max-h-[542px] xl:absolute xl:-right-[100px] min-[1680px]:right-[120px] xl:top-24'
+            className='hidden xl:block relative w-full h-[0px] max-w-[50vh] md:max-w-[70vw] xl:max-w-[860px] xl:max-h-[542px] xl:absolute xl:-right-[100px] min-[1680px]:right-[120px] xl:top-24'
           >
             <Image src={'/images/hero/mazda.png'} alt='' width={800} height={1000} style={{objectFit:'contain'}} priority/>
           </motion.div>

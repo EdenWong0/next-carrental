@@ -4,7 +4,7 @@ import Makes from "./Makes";
 
 export default function Cars() {
   return (
-    <section className='h-screen flex items-center' id='cars'>
+    <section className='lex items-center' id='cars'>
       <div className='container mx-auto'>
         <Makes />
         <CarSlider />

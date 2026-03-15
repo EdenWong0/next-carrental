@@ -46,7 +46,7 @@
     @apply text-base xl:text-xl xl:leading-8;
   }
   .section {
-    @apply w-full h-screen pt-[60px] xl:pt-[120px];
+    @apply w-full min-h-[80vh] p-[40px] xl:p-[60px];
   }
   .btn {
     @apply rounded-[16px] w-full uppercase font-medium text-white tracking-[2px] text-[13px] flex justify-center items-center transition-all duration-300;

@@ -18,25 +18,25 @@ const ReviewDara = [
     type: 'Mazda 3 GT 2018'
   },
   {
-    message: 'Outstanding experience! The Toyota RAV4 2022 exceeded my expectations. Clean, well-maintained, and packed with features. The team at TheNorthCarHub made my journey truly enjoyable.',
+    message: 'Outstanding experience! The Toyota RAV4 2022 exceeded my expectations. Clean, well-maintained, and packed with features.',
     avatar: '/images/review/avatar.jpg',
     name: 'Sam Jones',
     type: 'Toyota RAV4 2022'
   },
   {
-    message: 'Top-notch service! The vehicle options are diverse, and the rental process is straightforward. I appreciated the personalized attention to detail. Will recommend to friends and family!',
+    message: 'Top-notch service! The vehicle options are diverse, and the rental process is straightforward.',
     avatar: '/images/review/avatar.jpg',
     name: 'Linda Rodriguez',
     type: 'BMW x5 2024'
   },
   {
-    message: 'Smooth ride, excellent customer service! The team at TheNorthCarHub went above and beyond to ensure a hassle-free experience. The Honda Civic 2020 was a joy to drive.',
+    message: 'Smooth ride, excellent customer service! The team at TheNorthCarHub went above and beyond to ensure a hassle-free experience.',
     avatar: '/images/review/avatar.jpg',
     name: 'Robert Davis',
     type: 'Honda Civic 2020'
   },
   {
-    message: 'Fantastic rental experience! The Toyota RAV4 2022 provided safety and comfort for our family trip. Competitive prices and outstanding customer service. Highly recommended!',
+    message: 'Fantastic rental experience! The Toyota RAV4 2022 provided safety and comfort for our family trip.',
     avatar: '/images/review/avatar.jpg',
     name: 'Amanda Foster',
     type: 'Honda CR-V 2023'

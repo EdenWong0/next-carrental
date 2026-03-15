@@ -7,7 +7,7 @@ export default function Makes() {
     <section className='xl:pt-16 xl:h-[200px] bg-white flex flex-col justify-center'>
       <div className='container mx-auto'>
         <div className='mb-12'>
-          <h2 className='flex items-center justify-center font-bold text-2xl text-accent xl:pt-6'>
+          <h2 className='flex items-center justify-center font-bold text-2xl text-accent text-center xl:pt-6'>
             Discover the Most Popular Cars Chosen by Our Customers
           </h2>
         </div>
